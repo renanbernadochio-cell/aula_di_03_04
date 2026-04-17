@@ -6,7 +6,8 @@ body{
     margin:0;
     font-family: arial, Helvetica, sans-serif;
     background-color: #f4f4f4; /*cor em hexadecimal*/
-}
+    padding: 20px; /*alterei o padding 16/04*/
+} 
 header{
     background-color: #c0c0c0;/*cinza cocô kkkk*/
     color: #ffff;/*branco em hexadecimal*/
@@ -16,8 +17,8 @@ nav a{ /*nav navigation a a,de link, vou trabalhar só no link*/
     color: blue;
     text-decoration: none;/*tirei toda a decoração do texto*/
     padding: 4px;
-}
-.bloco{ /*declaração de class, a class procede de "." */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;/*radius é a borda arredondada*/
     background-color: #cccc;
     color: black;
     border: 1px dotted #a3a3; /*borda geral tracejada*/
@@ -31,7 +32,7 @@ nav a{ /*nav navigation a a,de link, vou trabalhar só no link*/
     display: flex;
     flex-wrap: wrap;
     gap: 24px;/*espaço entre elementos dentro do id*/
-    justify-content: flex-start;/*reforçando que ele vai estar "flexivel"*/
+    justify-content: center;/*reforçando que ele vai estar "flexivel"*/
 padding: 20px;
 
 }
@@ -50,4 +51,13 @@ padding: 20px;
     height: 220px;
     object-fit: cover; /*efeito de sobrepor*/
     display: block;
+}
+.foto:hover{
+    transform: scale(1.50) rotate(3deg);
+}
+.legenda{
+    margin-top: 10px;
+    font-family: 'courier New', Courier, monospace;
+    font-size: 17px;
+    font-style: italic;
 }
